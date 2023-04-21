@@ -1,0 +1,47 @@
+# IDE
+.lh
+.vscode
+.DS_Store
+.idea
+
+# vidieo
+*.mp4
+*.avi
+*.flv
+*.mov
+*.rmvb
+
+# image
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+
+# data
+checkpoint/*
+checkpoints/*
+data/*
+work_dirs/*
+
+# log
+*.log
+
+# cache
+*.cache
+
+# lib
+*.so
+*.lib
+*.dll
+
+# model
+*.pb
+*.pth
+*.onnx
+
+# zip
+*.zip
+*.tar.gz
+*.tar
+*.rar
