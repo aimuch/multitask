@@ -28,7 +28,6 @@ pip install mmcv==2.0.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2
 *如果你将 mmdet 作为依赖或第三方 Python 包*
 ```bash
 mim install mmdet==2.0.0
-# mim install mmdet==2.0.0
 ```
 - 源码安装    
 *在需要修改源码时要用源码安装*   
