@@ -1,7 +1,10 @@
+# Operating system
+.DS_Store
+Thumbs.db
+
 # IDE
 .lh
 .vscode
-.DS_Store
 .idea
 
 # vidieo
@@ -19,10 +22,10 @@
 *.bmp
 
 # data
-checkpoint/*
-checkpoints/*
+checkpoint/
+checkpoints/
 data/*
-work_dirs/*
+work_dirs/
 
 # log
 *.log
@@ -45,3 +48,8 @@ work_dirs/*
 *.tar.gz
 *.tar
 *.rar
+
+# python cache
+__pycache__/
+*.egg-info/
+__pycache__/

@@ -16,10 +16,13 @@ from plugin.mmdet3d_plugin.apis import init_model as init_model_mmdet3d
 
 
 __all__ = [
+    # mmdet
     'DetInferencer', 'async_inference_detector', 'inference_mot', 'init_detector', 'init_track_model',
     'inference_detector_mmdet', # rename
+    # mmseg
     'MMSegInferencer', 'inference_model', 'show_result_pyplot',
     'init_model_seg',           # rename
+    # mmdet3d
     'Base3DInferencer', 'LidarDet3DInferencer', 'LidarSeg3DInferencer', 'MonoDet3DInferencer', 'MultiModalityDet3DInferencer',
     'convert_SyncBN', 'inference_mono_3d_detector', 'inference_multi_modality_detector', 'inference_segmentor',
     'inference_detector_mmdet3d', 'init_model_mmdet3d' # rename
