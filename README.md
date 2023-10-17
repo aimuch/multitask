@@ -57,6 +57,7 @@
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
 ### mmcv和mmengine安装
+*可以通过mim安装或者pip安装，两种方式均可*    
 - mim安装
     ```bash
     pip install -U openmim
@@ -67,7 +68,11 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
     ```bash
     pip install mmcv==2.0.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.0/index.html
     ```
+### mmdet/mmdet3d/mmseg可以用plugin中的源码，也可以用pip安装或者官方源码安装   
+[TODO]
+
 ### mmdet安装
+*可以通过mim安装或者源码安装，两种方式均可*    
 - pip安装    
 *如果你将 mmdet 作为依赖或第三方 Python 包*
     ```bash
@@ -82,12 +87,32 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
     # "-v" 指详细说明，或更多的输出
     # "-e" 表示在可编辑模式下安装项目，因此对代码所做的任何本地修改都会生效，从而无需重新安装。
     ```
+    这里可以用本仓库中的`plugin/mmdet_plugin`中的源码安装    
+
+### mmdet3d安装
+*可以通过pip安装或者源码安装，两种方式均可*    
+- pip安装    
+*如果你将 mmdet 作为依赖或第三方 Python 包*
+    ```bash
+    mim install "mmdet3d>=1.1.0"
+    ```
+- 源码安装    
+*在需要修改源码时要用源码安装*   
+    ```bash
+    git clone https://github.com/open-mmlab/mmdetection3d.git
+    cd mmdetection
+    pip install -v -e .
+    # "-v" 指详细说明，或更多的输出
+    # "-e" 表示在可编辑模式下安装项目，因此对代码所做的任何本地修改都会生效，从而无需重新安装。
+    ```
+    这里可以用本仓库中的`plugin/mmdet3d_plugin`中的源码安装    
 
 ### mmseg安装   
+*可以通过mim安装或者源码安装，两种方式均可*    
 - pip安装   
     *如果你将 mmseg 作为依赖或第三方 Python 包*
     ```bash
-    pip install "mmsegmentation==1.0.0"
+    pip install "mmsegmentation>=1.0.0"
     ```
 - 源码安装   
 *在需要修改源码时要用源码安装*   
@@ -98,12 +123,14 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
     # '-v' 表示详细模式，更多的输出
     # '-e' 表示以可编辑模式安装工程，因此对代码所做的任何修改都生效，无需重新安装
     ```
+    这里可以用本仓库中的`plugin/mmseg_plugin`中的源码安装
 
 ### 验证安装
 ```bash
 python -c 'import torch;print(torch.__version__);print(torch.version.cuda);print(torch.cuda.is_available())'
 python -c 'import mmcv;print(mmcv.__version__)'
 python -c 'import mmdet;print(mmdet.__version__)'
+python -c 'import mmdet;print(mmdet3d.__version__)'
 python -c 'import mmseg;print(mmseg.__version__)'
 ```
 
