@@ -1,4 +1,48 @@
 # multitasks based on openmmlab
+## 文件树说明
+```bash
+.
+├── configs # 配置文件
+│   ├── det
+│   ├── det3d
+│   └── seg
+├── demo    # 演示
+│   ├── det
+│   ├── det3d
+│   └── seg
+├── mtl # 多任务
+│   ├── apis        # 接口
+│   ├── datasets    # 数据集
+│   ├── engine      # 引擎
+│   ├── evaluation  # 评估
+│   ├── __init__.py # 初始化
+│   ├── model       # 模型
+│   ├── registry    # 注册
+│   ├── utils       # 工具
+│   └── version.py  # 版本
+├── plugin   # 插件
+│   ├── __init__.p      # 初始化
+│   ├── mmdet3d_plugin  # 3d检测源码
+│   ├── mmdet_plugin    # 2d检测源码
+│   └── mmseg_plugin    # 分割源码
+├── projects    # 项目
+│   ├── det     # 2d检测
+│   ├── det3d   # 3d检测
+│   └── seg     # 分割
+├── README.md
+├── requirements    # 依赖
+├── requirements.txt
+├── setup.py    # 安装
+├── tests   # 测试
+│   ├── det     # 2d检测
+│   ├── det3d   # 3d检测
+│   └── seg     # 分割
+└── tool    # 工具
+    ├── det     # 2d检测
+    ├── det3d   # 3d检测
+    └── seg     # 分割
+```
+
 ## Requirements
 - CUDA=11.8
 - Pytorch=2.0.0
